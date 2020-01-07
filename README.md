@@ -3,6 +3,7 @@ Remake of Death Race arcade game
 
 https://lethalnjectionstudio.github.io/DeathRace/
 
+# Controls
 White Car <br>
 Forward: Numpad 8 <br>
 Left: Numpad 4 <br>
