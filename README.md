@@ -3,6 +3,8 @@
 # DeathRace
 Remake of Death Race arcade game
 
+Currently the resolution is messed up and full screen mode is kinda screwy. Will be fixed at some point.
+
 # Controls
 White Car <br>
 Forward: Numpad 8 <br>
