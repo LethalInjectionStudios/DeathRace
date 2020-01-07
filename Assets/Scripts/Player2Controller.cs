@@ -29,7 +29,7 @@ public class Player2Controller : MonoBehaviour
             moveSpeed = 2f;
         }
 
-        if(spinCooldown >= 0)
+        if(spinCooldown > 0)
         {
             this.transform.eulerAngles += Vector3.forward * 45f;
         }

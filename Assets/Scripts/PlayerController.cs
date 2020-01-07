@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {     
+
+        Debug.Log("Spin Time: " + spinCooldown);
         boostCooldown -= Time.deltaTime;
         boostTime -= Time.deltaTime;
         shotCooldown -= Time.deltaTime;
@@ -44,7 +46,7 @@ public class PlayerController : MonoBehaviour
             moveSpeed = 2f;
         }
 
-        if(spinCooldown >= 0)
+        if(spinCooldown > 0)
         {
             this.transform.eulerAngles += Vector3.forward * 45f;
         }

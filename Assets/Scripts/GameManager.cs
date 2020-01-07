@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Screen.SetResolution(1600, 1000, true);
+        Screen.SetResolution(1024, 768, true);
         gameOverText.text = "";
         gameTimer = 30;
         gameTimerText.text = Mathf.Floor(gameTimer).ToString();

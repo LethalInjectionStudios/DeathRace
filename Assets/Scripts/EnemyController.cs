@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
 
-    private int direction = 0;
-    private float moveSpeed = .5f;
+    public int direction = 0;
+    private float moveSpeed = 1f;
     private float timer = 2.5f;
     public Sprite grave;
     public GameObject gameManager;
@@ -26,8 +26,8 @@ public class EnemyController : MonoBehaviour
 
         if(timer <= 0)
         {
-            direction = Random.Range(0, 3);
-            timer = 2.5f;
+            direction = Random.Range(0, 4);
+            timer = Random.Range(1.5f, 3.5f);
         }
 
         if(direction == 0)
@@ -69,5 +69,7 @@ public class EnemyController : MonoBehaviour
         {
             direction = 0;
         }
+
+        timer = Random.Range(1.5f, 3.5f);
     }
 }
