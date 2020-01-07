@@ -14,6 +14,20 @@ public class PlayerController : MonoBehaviour
     public GameObject cannon;
 
     public GameObject missile;
+
+    public GameObject atkIcon;
+    public GameObject bstIcon;
+
+    void Start()
+    {
+        boostCooldown = 0f;
+        boostTime = 0f;
+        shotCooldown = 0f;
+        spinCooldown = 0f;
+
+        atkIcon.SetActive(true);
+        bstIcon.SetActive(true);
+    }
     
     // Update is called once per frame
     void Update()
@@ -53,12 +67,20 @@ public class PlayerController : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.RightControl) && boostCooldown <= 0){
                 boostTime = 1f;
                 boostCooldown = 5f;
+                bstIcon.SetActive(false);
             }
 
             if(Input.GetKeyDown(KeyCode.RightShift) && shotCooldown <= 0){
                 Instantiate(missile, cannon.transform.position, cannon.transform.rotation);
                 shotCooldown = 5f;
+                atkIcon.SetActive(false);
             }
+
+            if(boostCooldown <= 0)
+                bstIcon.SetActive(true);
+
+            if(shotCooldown <= 0)
+                atkIcon.SetActive(true);
         }
     }
 
