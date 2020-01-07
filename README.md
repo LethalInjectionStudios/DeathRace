@@ -1,7 +1,7 @@
+# https://lethalnjectionstudio.github.io/DeathRace/
+
 # DeathRace
 Remake of Death Race arcade game
-
-https://lethalnjectionstudio.github.io/DeathRace/
 
 # Controls
 White Car <br>
