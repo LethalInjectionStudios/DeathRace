@@ -1,4 +1,4 @@
-# https://lethalnjectionstudio.github.io/DeathRace/
+#  https://lethalinjectionstudios.github.io/DeathRace/
 
 # DeathRace
 Remake of Death Race arcade game
